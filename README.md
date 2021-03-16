@@ -2,13 +2,12 @@
 [![](https://github.com/alexei-led/stress-ng/workflows/Docker%20Image%20CI/badge.svg)](https://github.com/alexei-led/stress-ng/actions?query=workflow%3A"Docker+Image+CI") [![](https://github.com/alexei-led/stress-ng/workflows/Check%20stress-ng%20Release/badge.svg)](https://github.com/alexei-led/stress-ng/actions?query=workflow%3A"Check+stress-ng+Release")
 [![Docker Pulls](https://img.shields.io/docker/pulls/alexeiled/stress-ng.svg)](https://hub.docker.com/r/alexeiled/stress-ng/) [![Docker Stars](https://img.shields.io/docker/stars/alexeiled/stress-ng.svg)](https://hub.docker.com/r/alexeiled/stress-ng/)
 
+Fork from git@github.com:plenus-cloud/stress-ng.git
+Rebased on busybox image and added bash
+
 ## Info
 
-`stress-ng` Docker image is a `scratch` image that contains statically linked `stress-ng` tool only.
-
-## Auto update
-
-This image is automatically rebuilt, using GitHub actions, once a new version of `stress-ng` tool is released.
+`stress-ng` Docker image is a `busybox` image that contains statically linked `stress-ng` tool and `bash` only.
 
 ## Usage
 
