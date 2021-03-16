@@ -7,7 +7,7 @@ WORKDIR /code
 
 # download stress-ng sources
 ARG STRESS_NG_VERSION
-ENV STRESS_NG_VERSION ${STRESS_NG_VERSION:-0.10.10}
+ENV STRESS_NG_VERSION ${STRESS_NG_VERSION:-0.12.05}
 ADD https://github.com/ColinIanKing/stress-ng/archive/V${STRESS_NG_VERSION}.tar.gz .
 RUN tar -xf V${STRESS_NG_VERSION}.tar.gz && mv stress-ng-${STRESS_NG_VERSION} stress-ng
 
