@@ -21,6 +21,6 @@ RUN wget https://github.com/robxu9/bash-static/releases/download/5.1.004-1.2.2/b
 # Final image
 FROM busybox
 
-COPY --from=builder /code/stress-ng/stress-ng /
+COPY --from=builder /code/stress-ng/stress-ng /bin/stress-ng
 COPY --from=builder /code/bash /bin/bash
-RUN chmod 755 /bin/bash /stress-ng
+RUN chmod 755 /bin/bash /bin/stress-ng
